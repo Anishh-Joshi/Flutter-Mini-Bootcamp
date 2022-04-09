@@ -1,3 +1,4 @@
+import 'package:bmi_calculator_workshop/Results.dart';
 import 'package:flutter/material.dart';
 
 class BMI extends StatefulWidget {
@@ -174,7 +175,9 @@ class _BMIState extends State<BMI> {
             primary: Colors.pinkAccent,
             minimumSize: const Size(double.infinity, 80)),
         child: Text("CALCULATE BMI"),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Results()));
+        },
       ),
     );
   }
