@@ -23,6 +23,15 @@ class _BMIState extends State<BMI> {
        
       ),
       body:const SafeArea(child:  Text("BMI CAlCULATOR PAGE")) ,
+
+      bottomNavigationBar: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          primary: Colors.pinkAccent,
+           minimumSize: const Size(double.infinity, 80)
+        ),
+          child: const Text("CALCULATE BMI"),
+          onPressed: (){},
+        ),
     );
   }
 }
