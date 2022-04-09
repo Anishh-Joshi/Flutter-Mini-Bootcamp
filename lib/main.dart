@@ -15,9 +15,10 @@ class MyApp extends StatelessWidget {
       title: 'BMI Calculator',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: const Color(0xff0a0c23),
+        primaryColor:  Color(0xff0a0c23),
+        brightness: Brightness.dark
       ),
-      home: const BMI(),
+      home: BMI(),
     );
   }
 }
