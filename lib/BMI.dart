@@ -11,8 +11,18 @@ class BMI extends StatefulWidget {
 class _BMIState extends State<BMI> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body:Text("BMI CAlCULATOR PAGE") ,
+    return  Scaffold(
+      backgroundColor:Theme.of(context).primaryColor ,
+      appBar: AppBar(
+        title: const Text("BMI CALCULATOR"),
+        backgroundColor: Theme.of(context).primaryColor,
+        centerTitle: true,
+      ),
+      drawer: Drawer(
+        backgroundColor: Theme.of(context).primaryColor,
+       
+      ),
+      body:const SafeArea(child:  Text("BMI CAlCULATOR PAGE")) ,
     );
   }
 }
